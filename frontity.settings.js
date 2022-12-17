@@ -2,9 +2,7 @@ const settings = {
   "name": "squareblog",
   "state": {
     "frontity": {
-      "url": "https://test.frontity.org",
-      "title": "Test Frontity Blog",
-      "description": "WordPress installation for Frontity development"
+      "url": "http://blog.bomdebeer.com.br",
     }
   },
   "packages": [
@@ -15,7 +13,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "https://test.frontity.org"
+          "url": "http://blog.bomdebeer.com.br"
         }
       }
     },
