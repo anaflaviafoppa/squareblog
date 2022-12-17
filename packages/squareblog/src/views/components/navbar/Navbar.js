@@ -1,7 +1,7 @@
 import React from 'react';
-import Link from "@frontity/components/link"
+import Link from '@frontity/components/link';
 import {PageNames, PageURL} from "../../../utils/constants/PagesURL";
-import { connect } from "frontity";
+
 
 const Navbar = () => {
     return (
