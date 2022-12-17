@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {connect} from "frontity";
 import ItemMainPost from "../../components/item-main-post/ItemMainPost";
+import dayjs from "dayjs"
 
 MainPosts.propTypes = {
 
@@ -15,7 +16,7 @@ function MainPosts({items, state}) {
                     const post = state.source[item.type][item.id];
                     const title = post.title.rendered;
                     const description = post.excerpt.rendered;
-                    const date = post.date;
+                    const date = dayjs(post.date).format('DD/MM/YYYY');
                     const category = 'BOM DE BEER';
                     const tags = ['AVES', 'BOM DE COPO'];
                     return (

@@ -17,6 +17,10 @@ function Home({ state }) {
         <>
             <Carrousel items={carrouselItems} />
             <MainPosts items={mainItems} />
+            <section>
+                <h3>Conheça as nossas Marcas:</h3>
+            </section>
+
         </>
 
     );

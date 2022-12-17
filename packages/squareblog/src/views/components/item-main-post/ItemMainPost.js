@@ -2,7 +2,7 @@ import React from 'react';
 import Tags from "../tags/tags";
 import {stringToHTML} from "../../../utils/functions/functions";
 
-function ItemMainPost({title,category, date, description, tags, image, order}) {
+function ItemMainPost({title,category, date, description, tags, image,link, order}) {
     return (
         <section>
             <div>
