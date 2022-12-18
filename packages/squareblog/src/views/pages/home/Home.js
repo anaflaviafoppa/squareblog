@@ -27,7 +27,7 @@ function Home({ state }) {
                 {tags.map((tag, index) => {
                     const isSelected = tag === tagSelected;
                     return (
-                        <Tags key={index} text={tag} type={Priority.SECONDARY} isSelected={isSelected}/>
+                        <Tags key={index} clickable={true} text={tag} type={Priority.SECONDARY} isSelected={isSelected}/>
                     )
                 })}
             </div>

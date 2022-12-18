@@ -33,6 +33,8 @@ export const commonStyle = css`
     --font-bold: 600;
 
     --size-560: calc(560px*var(--multiplier));
+    --size-400: calc(400px*var(--multiplier));
+    --size-268: calc(268px*var(--multiplier));
     --size-178: calc(178px*var(--multiplier));
     --size-100: calc(100px*var(--multiplier));
     --size-80: calc(80px*var(--multiplier));

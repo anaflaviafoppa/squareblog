@@ -11,7 +11,7 @@ export const style = css`
     margin-right: var(--size-16);
   }
 
-  .tag:hover {
+  .tag-clickable:hover {
     cursor: pointer;
     transition: var(--transition);
   }
@@ -23,7 +23,7 @@ export const style = css`
     line-height: calc(var(--size-12) * var(--line-height-multiply));
   }
 
-  .tag-primary, .tag-secondary:hover {
+  .tag-primary, .tag-clickable.tag-secondary:hover {
     background: var(--color-light-gray);
   }
 
@@ -35,9 +35,9 @@ export const style = css`
   .tag-selected {
     background: var(--color-yellow);
   }
-  
-  .tag-selected:hover,
-  .tag-primary:hover {
+
+  .tag-clickable.tag-selected:hover,
+  .tag-clickable.tag-primary:hover {
     background-image: linear-gradient(rgb(0 0 0/20%) 0 0);
   }
 
