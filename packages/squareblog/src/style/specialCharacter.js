@@ -4,6 +4,7 @@ export const specialCharacter = css`
   .title-border {
     border-bottom: var(--border);
     padding-bottom: var(--size-8);
+    max-width: var(--size-560);
   }
   
   .title-border h3 {

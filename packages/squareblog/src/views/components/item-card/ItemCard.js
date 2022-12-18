@@ -1,8 +1,12 @@
 import React from 'react';
+import {Global} from "frontity";
+import {style} from "./item-car-style";
 
 function ItemCard({title,category, date, description, link}) {
     return (
-        <div>
+        <>
+            <Global styles={style} />
+        <div className="item-card">
             <div>
                 <p>{category}</p>
             </div>
@@ -12,6 +16,7 @@ function ItemCard({title,category, date, description, link}) {
                 <p>{date}</p>
             </div>
         </div>
+        </>
     );
 }
 

@@ -32,6 +32,7 @@ export const commonStyle = css`
     --font-normal: 500;
     --font-bold: 600;
 
+    --size-560: calc(560px*var(--multiplier));
     --size-178: calc(178px*var(--multiplier));
     --size-100: calc(100px*var(--multiplier));
     --size-80: calc(80px*var(--multiplier));
