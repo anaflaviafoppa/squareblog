@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from '@frontity/components/link';
 import {PageNames, PageURL} from "../../../utils/constants/PagesURL";
-import {Global, styled} from "frontity"
+import {Global} from "frontity"
 import {style} from "./Navbar-style";
 
 const Navbar = () => {

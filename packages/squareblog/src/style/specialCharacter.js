@@ -6,12 +6,13 @@ export const specialCharacter = css`
     padding-bottom: var(--size-8);
   }
   
-  title-border h3 {
+  .title-border h3 {
     text-transform: uppercase;
     margin: 0;
   }
   
-  title-border-container p {
+  .title-border-container > p {
+    margin-top: var(--size-8);
     font-size: var(--size-14);
     color: var(--color-gray);
     font-weight: var(--font-bold);

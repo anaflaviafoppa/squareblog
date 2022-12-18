@@ -38,6 +38,7 @@ export const commonStyle = css`
     --size-52: calc(52px*var(--multiplier));
     --size-42: calc(42px*var(--multiplier));
     --size-40: calc(40px*var(--multiplier));
+    --size-32: calc(32px*var(--multiplier));
     --size-24: calc(24px*var(--multiplier));
     --size-20: calc(20px*var(--multiplier));
     --size-18: calc(18px*var(--multiplier));
@@ -81,10 +82,11 @@ export const commonStyle = css`
     font-weight: var(--font-light);
     font-size: var(--size-16);
     line-height: calc(var(--size-16) * var(--line-height-multiply));
+    margin: 0;
   }
 
   .container {
-    padding: var(--size-40) var(--size-80);
+    padding: var(--size-32) var(--size-80);
   }
 
   .container-x {
