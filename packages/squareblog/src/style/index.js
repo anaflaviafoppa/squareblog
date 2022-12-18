@@ -18,6 +18,7 @@ export const commonStyle = css`
     --color-black: #2A2A2A;
     --color-white: #FFFFFF;
     --color-gray: #555555;
+    --color-balance-gray: #898989;
     --color-transparent: rgba(0,0,0,0);
     
     --multiplier:1;

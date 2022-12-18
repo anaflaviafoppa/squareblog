@@ -1,6 +1,6 @@
 import React from 'react';
 import {Global} from "frontity";
-import {style} from "./item-car-style";
+import {style} from "./item-card-style";
 import Tags from "../tags/tags";
 import {Priority} from "../../../utils/constants/Constants";
 
@@ -17,7 +17,7 @@ function ItemCard({title,category, date, description, link}) {
             <div className="item-card__description">
                 <h3>{title}</h3>
                 <div dangerouslySetInnerHTML={{__html: description}}/>
-                <p>{date}</p>
+                <p className="item-card__description--date">{date}</p>
             </div>
         </div>
         </>
