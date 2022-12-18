@@ -4,6 +4,7 @@ import Carrousel from "../../widgets/caroussel/Carroussel";
 import ItemCarrousel from "../../components/item-carrousel/ItemCarrousel";
 import ItemMainPost from "../../components/item-main-post/ItemMainPost";
 import MainPosts from "../../widgets/main-posts/MainPosts";
+import CardPosts from "../../widgets/card-posts/CardPosts";
 
 function Home({ state }) {
     const data = state.source.get(state.router.link);
@@ -20,7 +21,7 @@ function Home({ state }) {
             <section>
                 <h3>Conheça as nossas Marcas:</h3>
             </section>
-
+            <CardPosts items={cardsItems}/>
         </>
 
     );

@@ -1,6 +1,5 @@
 import React from 'react';
 import Tags from "../tags/tags";
-import {stringToHTML} from "../../../utils/functions/functions";
 
 function ItemMainPost({title,category, date, description, tags, image,link, order}) {
     return (
@@ -14,9 +13,9 @@ function ItemMainPost({title,category, date, description, tags, image,link, orde
                 <div dangerouslySetInnerHTML={{__html: description}}/>
             </div>
             <div>
-                {tags.map((tag) => {
+                {tags.map((tag, index) => {
                     return (
-                        <Tags text={tag} isSelected={false}/>
+                        <Tags key={index} text={tag} isSelected={false}/>
                     )
                 })}
             </div>
