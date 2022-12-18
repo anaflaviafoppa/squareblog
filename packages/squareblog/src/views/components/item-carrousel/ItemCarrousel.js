@@ -4,7 +4,7 @@ import Link from '@frontity/components/link'
 function ItemCarrousel({title, link}) {
     return (
         <section>
-            <h3>{title}</h3>
+            <h1>{title}</h1>
 
                 <Link link={link}>
                     <button>
