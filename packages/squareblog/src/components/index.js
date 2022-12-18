@@ -8,7 +8,7 @@ import Footer from "../views/components/footer/Footer";
 import {commonStyle} from "../style";
 
 import InterMedium from '../style/Inter-Medium.ttf';
-import InterLight from '../style/Inter-ExtraLight.ttf';
+import InterLight from '../style/Inter-Light.ttf';
 import {buttonsStyle} from "../style/buttons";
 import {specialCharacter} from "../style/specialCharacter";
 

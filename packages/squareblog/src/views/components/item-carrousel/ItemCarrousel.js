@@ -6,10 +6,13 @@ function ItemCarrousel({title, link}) {
         <section>
             <h1>{title}</h1>
 
+
+            <button className='button-secondary'>
                 <Link link={link}>
-                    <button>
-                    Veja a matéria completa</button>
+                    Veja a matéria completa
                 </Link>
+            </button>
+
 
         </section>
     );

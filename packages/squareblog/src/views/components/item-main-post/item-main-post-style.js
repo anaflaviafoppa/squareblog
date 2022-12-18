@@ -17,6 +17,10 @@ export const style = css`
     background-color: lightgoldenrodyellow;
   }
   
+  .item-main__description {
+    margin-bottom: var(--size-40);
+  }
+  
   .item-main__revert .item-main__image {
     grid-row: 1;
   }

@@ -27,6 +27,7 @@ export const commonStyle = css`
     --font-family-inter_light: 'InterLight';
     --font-family-mont: 'Montserrat';
 
+    --font-lightner: 300;
     --font-light: 400;
     --font-normal: 500;
     --font-bold: 600;
@@ -44,11 +45,15 @@ export const commonStyle = css`
     --size-18: calc(18px*var(--multiplier));
     --size-16: calc(16px*var(--multiplier));
     --size-14: calc(14px*var(--multiplier));
+    --size-12: calc(12px*var(--multiplier));
     --size-8: calc(8px*var(--multiplier));
 
     --line-height-multiply: 1.2;
 
     --border: solid 1px var(--color-yellow);
+    --border-gray: solid 1px var(--color-light-gray);
+    
+    --transition: all ease-in-out 0.3s;
   }
 
 

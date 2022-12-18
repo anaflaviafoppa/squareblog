@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import {connect} from "frontity";
 import ItemMainPost from "../../components/item-main-post/ItemMainPost";
 import dayjs from "dayjs"
-import {ORDER} from "../../../utils/constants/Constants";
+import {Order} from "../../../utils/constants/Constants";
 
 MainPosts.propTypes = {
 
@@ -13,10 +13,10 @@ function MainPosts({items, state}) {
     function checkOrder(index) {
         const isEven = (index+1)%2 ===0;
         if(isEven) {
-            return ORDER.REVERT;
+            return Order.REVERT;
         }
 
-        return ORDER.NORMAL;
+        return Order.NORMAL;
 
     }
     return (
@@ -28,7 +28,7 @@ function MainPosts({items, state}) {
                     const description = post.excerpt.rendered;
                     const date = dayjs(post.date).format('DD/MM/YYYY');
                     const category = 'BOM DE BEER';
-                    const tags = ['AVES', 'BOM DE COPO'];
+                    const tags = ['aves', 'bom de copo', 'comida de boteco'];
                     const order = checkOrder(index);
                     return (
                         <ItemMainPost title={title}

@@ -11,12 +11,17 @@ export const buttonsStyle = css`
     font-weight: var(--font-light);
     font-size: var(--size-16);
     line-height: calc(var(--size-16) * var(--line-height-multiply));
+    padding: 0 var(--size-16);
+  }
+  
+  button a {
+    text-decoration: none;
   }
   
   button:hover {
     border: none;
     cursor: pointer;
-    transition: all ease-in-out 0.7s;
+    transition: var(--transition);
   }
   
   .button-primary,.button-secondary:hover {
@@ -38,7 +43,7 @@ export const buttonsStyle = css`
   .button-primary__rounded {
     text-transform: uppercase;
     border-radius: var(--size-8);
-    padding: 0 var(--size-16);
+    
     color: var(--color-black);
     font-family: var(--font-family-inter);
     font-style: normal;

@@ -5,7 +5,7 @@ import ItemCarrousel from "../../components/item-carrousel/ItemCarrousel";
 
 function Carrousel({state, items}) {
     return (
-        <section>
+        <section className='container'>
             {items.map((item) => {
                 const post = state.source[item.type][item.id]
                 return (

@@ -2,11 +2,11 @@ import React from 'react';
 import Tags from "../tags/tags";
 import {Global} from "frontity"
 import {style} from "./item-main-post-style";
-import {ORDER} from "../../../utils/constants/Constants";
+import {Order, Priority} from "../../../utils/constants/Constants";
 
 
 function ItemMainPost({title,category, date, description, tags, image,link, order}) {
-    const className = order === ORDER.NORMAL ? 'item-main' : 'item-main item-main__revert';
+    const className = order === Order.NORMAL ? 'item-main' : 'item-main item-main__revert';
     return (
         <>
             <Global styles={style}/>
@@ -22,10 +22,10 @@ function ItemMainPost({title,category, date, description, tags, image,link, orde
                     <h1>{title}</h1>
                     <div dangerouslySetInnerHTML={{__html: description}}/>
                 </div>
-                <div>
+                <div className="tag-container">
                     {tags.map((tag, index) => {
                         return (
-                            <Tags key={index} text={tag} isSelected={false}/>
+                            <Tags key={index} text={tag} type={Priority.PRIMARY} isSelected={false}/>
                         )
                     })}
                 </div>
